@@ -104,7 +104,7 @@ The easiest way to run the application is using Docker:
 
 2. **Or build from source**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/akhi-lbj/insurance-premium-project.git
    cd insurance-premium-project
    docker build -t insurance-premium-api .
    docker run -p 8000:8000 insurance-premium-api
