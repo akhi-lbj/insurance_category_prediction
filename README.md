@@ -90,6 +90,35 @@ insurance-premium-project/
 
 ## 👨‍💻 Installation & Running
 
+### 🐳 Docker (Recommended)
+
+The official Docker image is available on [Docker Hub](https://hub.docker.com/repository/docker/akhilbaburaj204/insurance-premium-project/general).
+
+The easiest way to run the application is using Docker:
+
+1. **Using pre-built image from Docker Hub**:
+   ```bash
+   docker pull akhilbaburaj204/insurance-premium-project
+   docker run -p 8000:8000 akhilbaburaj204/insurance-premium-project
+   ```
+
+2. **Or build from source**:
+   ```bash
+   git clone <repository-url>
+   cd insurance-premium-project
+   docker build -t insurance-premium-api .
+   docker run -p 8000:8000 insurance-premium-api
+   ```
+
+3. **Run in detached mode (background)**:
+   ```bash
+   docker run -d -p 8000:8000 --name insurance-api akhilbaburaj204/insurance-premium-project
+   ```
+
+The API will be available at `http://localhost:8000`.
+
+### 💻 Local Installation
+
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
